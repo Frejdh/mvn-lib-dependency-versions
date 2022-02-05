@@ -6,18 +6,18 @@
 
     <groupId>com.frejdh</groupId>
     <artifactId>dependency-versions</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <!-- Latest (stable) versions -->
-        <job-queuing.version>1.1.1</job-queuing.version>
-        <common-toolbox.version>1.0.5</common-toolbox.version>
-        <network-toolbox.version>1.0.1</network-toolbox.version>
-        <configurator.version>1.1.1</configurator.version>
-        <file-watcher.version>1.0.2</file-watcher.version>
-        <ansi-logger.version>1.1.0</ansi-logger.version>
-        <thread-executor.version>1.0.0</thread-executor.version>
+        <frejdh.ansi-logger.version>1.1.0</frejdh.ansi-logger.version>
+        <frejdh.common-toolbox.version>1.0.8</frejdh.common-toolbox.version>
+        <frejdh.thread-executor.version>1.0.0</frejdh.thread-executor.version>
+        <frejdh.file-watcher.version>1.0.2</frejdh.file-watcher.version>
+        <frejdh.configurator.version>1.1.0</frejdh.configurator.version> <!-- Update to new once available, to make env variables work better! -->
+        <frejdh.network-toolbox.version>1.0.1</frejdh.network-toolbox.version>
+        <frejdh.job-queue.version>1.2.2</frejdh.job-queue.version>
     </properties>
 
 
@@ -26,48 +26,47 @@
             <!--
                 Latest stable releases are the default choice
             -->
+			<dependency>
+				<groupId>com.frejdh.util.common</groupId>
+				<artifactId>ansi-logger</artifactId>
+				<version>${frejdh.ansi-logger.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util</groupId>
-                <artifactId>job-queuing</artifactId>
-                <version>${job-queuing.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util.common</groupId>
+				<artifactId>common-toolbox</artifactId>
+				<version>${frejdh.common-toolbox.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util.common</groupId>
-                <artifactId>common-toolbox</artifactId>
-                <version>${common-toolbox.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util.concurrency</groupId>
+				<artifactId>thread-executor</artifactId>
+				<version>${frejdh.thread-executor.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util.networking</groupId>
-                <artifactId>network-toolbox</artifactId>
-                <version>${network-toolbox.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util</groupId>
+				<artifactId>file-watcher</artifactId>
+				<version>${frejdh.file-watcher.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util.environment</groupId>
-                <artifactId>configurator</artifactId>
-                <version>${configurator.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util.enviroment</groupId>
+				<artifactId>configurator</artifactId>
+				<version>${frejdh.configurator.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util</groupId>
-                <artifactId>file-watcher</artifactId>
-                <version>${file-watcher.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util.networking</groupId>
+				<artifactId>network-toolbox</artifactId>
+				<version>${frejdh.network-toolbox.version}</version>
+			</dependency>
 
-            <dependency>
-                <groupId>com.frejdh.util.common</groupId>
-                <artifactId>ansi-logger</artifactId>
-                <version>${ansi-logger.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.frejdh.util.concurrency</groupId>
-                <artifactId>thread-executor</artifactId>
-                <version>${thread-executor.version}</version>
-            </dependency>
+			<dependency>
+				<groupId>com.frejdh.util</groupId>
+				<artifactId>job-queuing</artifactId>
+				<version>${frejdh.job-queue.version}</version>
+			</dependency>
 
 
 
@@ -82,8 +81,13 @@
     </dependencyManagement>
 
     <repositories>
+        <!-- My repositories. Still needs to be added in the project pom file that is using them -->
 
-        <!-- My repositories -->
+        <repository>
+			<id>library-master-pom</id>
+			<url>https://raw.github.com/Frejdh/mvn-lib-master/releases/</url>
+		</repository>
+        
         <repository>
             <id>mvn-lib-common-ansi-logger</id>
             <url>https://raw.github.com/Frejdh/mvn-lib-ansi-logger/releases/</url>
