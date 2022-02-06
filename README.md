@@ -9,7 +9,7 @@ This repository keeps track of my latest maven artifact releases.
         <dependency>
             <groupId>com.frejdh</groupId>
             <artifactId>dependency-versions</artifactId>
-            <version>1.1.0-SNAPSHOT</version>
+            <version>1.1.0</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
