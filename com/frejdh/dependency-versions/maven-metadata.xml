@@ -3,9 +3,10 @@
   <groupId>com.frejdh</groupId>
   <artifactId>dependency-versions</artifactId>
   <versioning>
+    <release>1.1.0</release>
     <versions>
-      <version>1.1.0-SNAPSHOT</version>
+      <version>1.1.0</version>
     </versions>
-    <lastUpdated>20220205215716</lastUpdated>
+    <lastUpdated>20220206101411</lastUpdated>
   </versioning>
 </metadata>
