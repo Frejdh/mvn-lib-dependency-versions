@@ -4,8 +4,8 @@ This repository keeps track of my latest maven artifact releases.
 
 ## Adding the dependency
 ```
-</dependencyManagement>
-    </dependencies>
+<dependencyManagement>
+    <dependencies>
         <dependency>
             <groupId>com.frejdh</groupId>
             <artifactId>dependency-versions</artifactId>
