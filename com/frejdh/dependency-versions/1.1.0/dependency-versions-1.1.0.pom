@@ -51,7 +51,7 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.frejdh.util.enviroment</groupId>
+				<groupId>com.frejdh.util.environment</groupId>
 				<artifactId>configurator</artifactId>
 				<version>${frejdh.configurator.version}</version>
 			</dependency>
