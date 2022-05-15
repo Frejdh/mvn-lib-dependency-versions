@@ -6,7 +6,7 @@
 
     <groupId>com.frejdh</groupId>
     <artifactId>dependency-versions</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -53,6 +53,19 @@
 			<dependency>
 				<groupId>com.frejdh.util.environment</groupId>
 				<artifactId>configurator</artifactId>
+				<version>${frejdh.configurator.version}</version>
+				<type>pom</type>
+			</dependency>
+
+           <dependency>
+				<groupId>com.frejdh.util.environment</groupId>
+				<artifactId>configurator-service</artifactId>
+				<version>${frejdh.configurator.version}</version>
+			</dependency>
+
+            <dependency>
+				<groupId>com.frejdh.util.environment</groupId>
+				<artifactId>configurator-test-helper</artifactId>
 				<version>${frejdh.configurator.version}</version>
 			</dependency>
 
