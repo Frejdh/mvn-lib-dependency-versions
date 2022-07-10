@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.frejdh</groupId>
 	<artifactId>dependency-versions</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<!-- Latest (stable) versions -->
-		<frejdh.ansi-logger.version>1.2.0</frejdh.ansi-logger.version>
+		<frejdh.ansi-logger.version>1.2.1</frejdh.ansi-logger.version>
 		<frejdh.common-toolbox.version>1.2.0</frejdh.common-toolbox.version>
 		<frejdh.thread-executor.version>1.0.0</frejdh.thread-executor.version>
 		<frejdh.file-watcher.version>1.0.2</frejdh.file-watcher.version>
@@ -92,7 +92,7 @@
 	</dependencyManagement>
 
 	<repositories>
-	<!-- My repositories. Still needs to be added in the project pom file that is using them -->
+		<!-- My repositories. Still needs to be added in the project pom file that is using them -->
 
 		<repository>
 			<id>library-master-pom</id>
